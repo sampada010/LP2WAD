@@ -1,0 +1,50 @@
+<div class="todo-container">
+  <h1>{{ title }}</h1>
+  
+  <!-- Add new task form -->
+  <div class="add-task">
+    <input 
+      type="text" 
+      placeholder="Add a new task..." 
+      [(ngModel)]="newTaskText" 
+      (keyup.enter)="addTask()"
+    >
+    <button (click)="addTask()">Add</button>
+  </div>
+  
+  <!-- Task list -->
+  <div class="task-list">
+    <div *ngIf="tasks.length === 0" class="empty-list">
+      No tasks yet. Add a task to get started!
+    </div>
+    
+    <div *ngFor="let task of tasks" class="task-item" [class.completed]="task.completed">
+      <!-- View mode -->
+      <div *ngIf="editingTask?.id !== task.id" class="task-view">
+        <input 
+          type="checkbox" 
+          [checked]="task.completed"
+          (change)="toggleComplete(task)"
+        >
+        <span class="task-text" [class.completed-text]="task.completed">{{ task.text }}</span>
+        <div class="task-actions">
+          <button (click)="startEdit(task)">Edit</button>
+          <button (click)="deleteTask(task.id)">Delete</button>
+        </div>
+      </div>
+      
+      <!-- Edit mode -->
+      <div *ngIf="editingTask?.id === task.id" class="task-edit">
+        <input 
+          type="text" 
+          [(ngModel)]="editText" 
+          (keyup.enter)="saveEdit()"
+        >
+        <div class="edit-actions">
+          <button (click)="saveEdit()">Save</button>
+          <button (click)="cancelEdit()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
