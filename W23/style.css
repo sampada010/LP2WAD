@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f8;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #3b2f7a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2c2160;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-tab {
+    padding: 0.8rem 0.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .nav-tab.active {
+    color: white;
+    border-bottom: 3px solid #f15a29;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 1rem;
+    margin-bottom: 5rem;
+  }
+  
+  .club-container {
+    display: none;
+  }
+  
+  .club-container.active {
+    display: block;
+  }
+  
+  .club-card {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .club-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .club-info {
+    padding: 1rem;
+  }
+  
+  .club-title {
+    color: #3b2f7a;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .club-description {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+  
+  .achievements-title {
+    font-weight: bold;
+    color: #f15a29;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .achievement-list {
+    list-style-type: none;
+  }
+  
+  .achievement-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #eee;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .achievement-item:last-child {
+    border-bottom: none;
+  }
+  
+  .achievement-item:before {
+    content: "🏆";
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer {
+    background-color: #3b2f7a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .content {
+      max-width: 768px;
+      margin: 0 auto 5rem auto;
+    }
+  }

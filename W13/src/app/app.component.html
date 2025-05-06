@@ -1,0 +1,93 @@
+<div class="todo-app">
+  <h1>Todo App</h1>
+  
+  <!-- Add todo form -->
+  <form (ngSubmit)="addTodo()">
+    <input 
+      type="text" 
+      [(ngModel)]="newTodo" 
+      name="newTodo" 
+      placeholder="Add new todo..."
+      required>
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Todo list -->
+  <ul>
+    <li *ngFor="let todo of todos">
+      <input 
+        type="checkbox" 
+        [checked]="todo.completed" 
+        (change)="toggleTodo(todo)">
+      <span [class.completed]="todo.completed">{{ todo.text }}</span>
+      <button (click)="deleteTodo(todo)">×</button>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .todo-app {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #45a049;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  li button {
+    background: #ff4444;
+    padding: 4px 8px;
+    margin-left: auto;
+  }
+
+  li button:hover {
+    background: #cc0000;
+  }
+</style>

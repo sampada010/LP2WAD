@@ -1,0 +1,158 @@
+/* Main CSS Stylesheet for PICT Mobile Website - Simplified Enhancement */
+
+/* Color Scheme */
+:root {
+    --pict-blue: #1a5b9a;
+    --pict-gold: #f4a534;
+    --pict-light: #f5f5f5;
+    --pict-dark: #333333;
+}
+
+/* General Styling */
+.center-content {
+    text-align: center;
+    padding: 15px;
+}
+
+.ui-header .ui-title {
+    margin: 0 10%;
+    color: var(--pict-blue);
+}
+
+/* Home Page */
+.logo {
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.feature-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* Enhanced Buttons */
+.ui-grid-a .ui-btn, .ui-grid-b .ui-btn {
+    margin: 4px;
+    font-weight: 600;
+}
+
+.ui-block-a .ui-btn {
+    background-color: var(--pict-blue);
+    color: white;
+    border-color: var(--pict-blue);
+}
+
+.ui-block-b .ui-btn {
+    background-color: white;
+    color: var(--pict-blue);
+    border-color: var(--pict-blue);
+}
+
+/* Content Styling */
+h2 {
+    color: var(--pict-blue);
+    border-bottom: 2px solid var(--pict-gold);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--pict-blue);
+}
+
+/* Collapsible Elements */
+.ui-collapsible-heading .ui-btn {
+    background-color: var(--pict-light);
+}
+
+/* Courses Page */
+.course-icon {
+    float: left;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.ui-listview > li p {
+    margin-left: 60px;
+    color: #666;
+}
+
+/* Departments Page */
+.dept-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Contact Page */
+.map-container {
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.map-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-icon {
+    float: left;
+    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+}
+
+/* Form Styling */
+input, textarea, select {
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+}
+
+form button {
+    background-color: var(--pict-gold) !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* Navigation and Footer */
+#nav-panel {
+    background-color: var(--pict-blue);
+}
+
+#nav-panel li a {
+    color: white;
+}
+
+.ui-footer {
+    border-top: 2px solid var(--pict-gold);
+}
+
+.ui-btn-active {
+    background-color: var(--pict-gold) !important;
+    border-color: var(--pict-gold) !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 480px) {
+    .ui-content {
+        padding: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .feature-img {
+        max-height: 250px;
+    }
+}

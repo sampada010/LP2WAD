@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PICT - Departments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Departments Page -->
+    <div data-role="page" id="departments">
+        <div data-role="header" data-position="fixed">
+            <a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Departments</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div data-role="content">
+            <h2>Academic Departments</h2>
+            
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Computer Engineering Department</h3>
+                <img src="/api/placeholder/400/150" alt="Computer Department" class="dept-img">
+                <p>The Department of Computer Engineering was established in 1983 and has been at the forefront of computer education in the region. The department boasts state-of-the-art laboratories and experienced faculty members.</p>
+                
+                <h4>Facilities:</h4>
+                <ul>
+                    <li>High-Performance Computing Lab</li>
+                    <li>AI and Machine Learning Lab</li>
+                    <li>Software Development Center</li>
+                    <li>Internet of Things Lab</li>
+                </ul>
+                
+                <h4>Research Areas:</h4>
+                <ul>
+                    <li>Artificial Intelligence and Machine Learning</li>
+                    <li>Computer Vision and Image Processing</li>
+                    <li>Distributed Computing</li>
+                    <li>Data Science and Analytics</li>
+                </ul>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Information Technology Department</h3>
+                <img src="/api/placeholder/400/150" alt="IT Department" class="dept-img">
+                <p>Established in 1999, the IT Department focuses on providing quality education in information technology, network management, and database systems. The department has close ties with the IT industry.</p>
+                
+                <h4>Facilities:</h4>
+                <ul>
+                    <li>Database Management Lab</li>
+                    <li>Network Security Lab</li>
+                    <li>Web Technology Center</li>
+                    <li>Cloud Computing Lab</li>
+                </ul>
+                
+                <h4>Research Areas:</h4>
+                <ul>
+                    <li>Cloud Computing and Virtualization</li>
+                    <li>Cybersecurity and Cryptography</li>
+                    <li>Big Data Analytics</li>
+                    <li>Internet of Things (IoT)</li>
+                </ul>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Electronics & Telecommunication Department</h3>
+                <img src="/api/placeholder/400/150" alt="E&TC Department" class="dept-img">
+                <p>The E&TC Department offers comprehensive programs covering electronic circuits, communication systems, and signal processing techniques. The department has well-equipped laboratories for practical training.</p>
+                
+                <h4>Facilities:</h4>
+                <ul>
+                    <li>Digital Signal Processing Lab</li>
+                    <li>VLSI Design Lab</li>
+                    <li>Microprocessor and Microcontroller Lab</li>
+                    <li>Communication Systems Lab</li>
+                </ul>
+                
+                <h4>Research Areas:</h4>
+                <ul>
+                    <li>Wireless Communication</li>
+                    <li>VLSI Design and Testing</li>
+                    <li>Embedded Systems</li>
+                    <li>Signal and Image Processing</li>
+                </ul>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Artificial Intelligence & Data Science</h3>
+                <img src="/api/placeholder/400/150" alt="AIDS Department" class="dept-img">
+                <p>The offered curriculum is interdisciplinary in nature by fine tuning computer science discipline with Mathematical Foundations, Artificial Intelligence Techniques, Machine Learning Principles, Statistical Methods, Data Science principles and methodologies.</p>
+                
+                <h4>Facilities:</h4>
+                <ul>
+                    <li>Holistic student learning environment</li>
+                    <li>Well-equipped laboratories</li>
+                    <li>Strong PICT alumni base</li>
+                </ul>
+                
+                <h4>Focus Areas:</h4>
+                <ul>
+                    <li>Research & development</li>
+                    <li>Academic Collaboration</li>
+                    <li>Data Analysis</li>
+                    <li>Professional Ethics</li>
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Electronics and Computer Engineering</h3>
+                <img src="/api/placeholder/400/150" alt="ECE Department" class="dept-img">
+                <p>The main research focus of the ECE is in the areas of Embedded Design, Semiconductor Devices, Artificial Intelligence, Machine Learning, Cryptography, Network Security, Parallel-Distributed and High-Performance Computing, Algorithms, and Cloud Computing, etc.</p>
+                
+                <h4>Facilities:</h4>
+                <ul>
+                    <li>Holistic student learning environment</li>
+                    <li>Well-equipped laboratories</li>
+                    <li>Well trained and qualified supporting technical staff members</li>
+                </ul>
+                
+                <h4>Focus Areas:</h4>
+                <ul>
+                    <li>Industry-Institution Interactions and collaborative for R&D activities</li>
+                    <li>Academic Collaboration</li>
+                    <li>Multi-disciplinary courses in emerging areas</li>
+                    <li>Publish good quality paper publications in refereed journals.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-icon="home">Home</a></li>
+                    <li><a href="about.html" data-icon="info">About</a></li>
+                    <li><a href="courses.html" data-icon="grid">Courses</a></li>
+                    <li><a href="contact.html" data-icon="mail">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div data-role="panel" id="nav-panel" data-display="overlay" data-theme="b">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

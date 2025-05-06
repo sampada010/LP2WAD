@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Marks Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Student Marks Dashboard</h1>
+    <h2 id="studentCount">👥 Total Students: 0</h2>
+
+    <form id="studentForm">
+      <input type="text" name="Name" placeholder="Name" required />
+      <input type="text" name="Roll_No" placeholder="Roll No" required />
+      <input type="number" name="WAD_Marks" placeholder="WAD" required />
+      <input type="number" name="DSBDA_Marks" placeholder="DSBDA" required />
+      <input type="number" name="CNS_Marks" placeholder="CNS" required />
+      <input type="number" name="CC_Marks" placeholder="CC" required />
+      <input type="number" name="AI_marks" placeholder="AI" required />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <div class="actions">
+      <button onclick="fetchStudents()">📄 All Students</button>
+      <button onclick="filterDSBDA()">🔍 DSBDA > 20</button>
+      <button onclick="filterAllAbove25()">🎯 All > 25</button>
+      <button onclick="filterWADCCBelow40()">📉 WAD & CC < 40</button>
+    </div>
+
+    <div class="update-section">
+      <input type="text" id="updateName" placeholder="Name to Update Marks" />
+      <button onclick="updateMarks()">➕ Update Marks by 10</button>
+    </div>
+
+    <div class="delete-section">
+      <input type="text" id="deleteName" placeholder="Name to Delete" />
+      <button onclick="deleteStudent()">🗑️ Delete</button>
+    </div>
+
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th>Name</th><th>Roll No</th><th>WAD</th><th>DSBDA</th><th>CNS</th><th>CC</th><th>AI</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

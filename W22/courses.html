@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PICT - Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Courses Page -->
+    <div data-role="page" id="courses">
+        <div data-role="header" data-position="fixed">
+            <a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Courses</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div data-role="content">
+            <h2>Courses Offered at PICT</h2>
+            
+            <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Undergraduate Programs</h3>
+                    <ul data-role="listview">
+                        <li>
+                           
+                            <h3>B.E. in Computer Engineering</h3>
+                            <p>4-year program focusing on computer hardware, software, networking, and system design.</p>
+                        </li>
+                        <li>
+                           
+                            <h3>B.E. in Information Technology</h3>
+                            <p>4-year program covering IT infrastructure, database systems, and network management.</p>
+                        </li>
+                        <li>
+                           
+                            <h3>B.E. in Electronics & Telecommunication</h3>
+                            <p>4-year program on electronic devices, communication systems, and signal processing.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div data-role="collapsible">
+                    <h3>Postgraduate Programs</h3>
+                    <ul data-role="listview">
+                        <li>
+                            
+                            <h3>M.Tech in Computer Engineering</h3>
+                            <p>2-year advanced program with specializations in AI, Machine Learning, and Big Data.</p>
+                        </li>
+                        <li>
+                            
+                            <h3>M.Tech in Information Technology</h3>
+                            <p>2-year advanced program with focus on cloud computing, IoT, and cybersecurity.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div data-role="collapsible">
+                    <h3>Doctoral Programs</h3>
+                    <ul data-role="listview">
+                        <li>
+                           
+                            <h3>Ph.D. in Computer Engineering</h3>
+                            <p>Research program in various domains of computer science and engineering.</p>
+                        </li>
+                        <li>
+                           
+                            <h3>Ph.D. in Electronics & Telecommunication</h3>
+                            <p>Research program focusing on advanced communication technologies.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div data-role="collapsible">
+                    <h3>Certificate Courses</h3>
+                    <ul data-role="listview">
+                        <li>
+                           
+                            <h3>Artificial Intelligence & Machine Learning</h3>
+                            <p>6-month intensive program covering ML algorithms, neural networks, and applications.</p>
+                        </li>
+                        <li>
+                            
+                            <h3>Cybersecurity</h3>
+                            <p>4-month program on network security, ethical hacking, and security protocols.</p>
+                        </li>
+                        <li>
+                            
+                            <h3>Full Stack Web Development</h3>
+                            <p>3-month intensive program covering frontend and backend technologies.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Admission Process</h3>
+                <p>Admissions to PICT are based on:</p>
+                <ul>
+                    <li>For UG: JEE Mains / MHT-CET scores followed by counseling</li>
+                    <li>For PG: GATE scores and academic performance</li>
+                    <li>For Ph.D.: Research proposal evaluation and interview</li>
+                </ul>
+                <p>For detailed admission procedures, please contact the admission office.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-icon="home">Home</a></li>
+                    <li><a href="about.html" data-icon="info">About</a></li>
+                    <li><a href="#courses" data-icon="grid" class="ui-btn-active">Courses</a></li>
+                    <li><a href="contact.html" data-icon="mail">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div data-role="panel" id="nav-panel" data-display="overlay" data-theme="b">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

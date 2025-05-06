@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="skills">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>My Skills</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2 class="page-title">Technical Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-end Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5/CSS3</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="95" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="90" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="85" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">jQuery</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="90" disabled>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Back-end Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="80" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="75" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="85" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="70" disabled>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Adobe Photoshop</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="80" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="85" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git/GitHub</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="90" disabled>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Responsive Design</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <input type="range" data-highlight="true" min="0" max="100" value="95" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>&copy; 2025 My Portfolio</h4>
+        </div>
+        
+        <!-- Panel -->
+        <div data-role="panel" id="nav-panel" data-display="overlay" data-theme="b">
+            <ul data-role="listview">
+                <li data-icon="home"><a href="index.html" data-transition="fade">Home</a></li>
+                <li><a href="about.html" data-transition="slide">About Me</a></li>
+                <li><a href="projects.html" data-transition="slide">Projects</a></li>
+                <li><a href="skills.html" data-transition="slide">Skills</a></li>
+                <li><a href="contact.html" data-transition="slide">Contact</a></li>
+            </ul>
+            <a href="#" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

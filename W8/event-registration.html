@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 class="mb-4 text-center">Event Registration</h2>
+    <form class="needs-validation" novalidate>
+      
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="fullName" placeholder="Full Name" required 
+               data-bs-toggle="tooltip" title="Enter your full legal name">
+        <label for="fullName">Full Name</label>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" required
+               data-bs-toggle="tooltip" title="Enter a valid email address">
+        <label for="email">Email address</label>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required
+               data-bs-toggle="tooltip" title="Enter a 10-digit phone number">
+        <label for="phone">Phone Number</label>
+        <div class="invalid-feedback">Please enter a valid 10-digit number.</div>
+      </div>
+
+      <div class="form-floating mb-3">
+        <select class="form-select" id="eventType" required data-bs-toggle="tooltip" title="Choose the event you're attending">
+          <option value="" selected disabled>Choose...</option>
+          <option value="webinar">Webinar</option>
+          <option value="workshop">Workshop</option>
+          <option value="seminar">Seminar</option>
+        </select>
+        <label for="eventType">Event Type</label>
+        <div class="invalid-feedback">Please select an event type.</div>
+      </div>
+
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a message" id="message" style="height: 100px"
+                  data-bs-toggle="tooltip" title="Optional message or queries"></textarea>
+        <label for="message">Message (Optional)</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

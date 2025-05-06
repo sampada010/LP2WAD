@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="projects">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>My Projects</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2 class="page-title">Recent Projects</h2>
+            
+            <ul data-role="listview" data-inset="true" class="project-list">
+                <li>
+                    <a href="#project1-popup" data-rel="popup" data-transition="pop">
+                        <img src="images/project1.jpg" alt="Project 1" class="project-thumbnail">
+                        <h2>E-commerce Website</h2>
+                        <p>A fully responsive online store built with HTML, CSS, and JavaScript</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project2-popup" data-rel="popup" data-transition="pop">
+                        <img src="images/project2.jpg" alt="Project 2" class="project-thumbnail">
+                        <h2>Portfolio Template</h2>
+                        <p>A customizable portfolio template for creative professionals</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project3-popup" data-rel="popup" data-transition="pop">
+                        <img src="images/project3.jpg" alt="Project 3" class="project-thumbnail">
+                        <h2>Mobile App UI</h2>
+                        <p>UI/UX design for a fitness tracking mobile application</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Project Popups -->
+            <div data-role="popup" id="project1-popup" data-overlay-theme="b" class="project-popup">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="header">
+                    <h2>E-commerce Website</h2>
+                </div>
+                <div role="main" class="ui-content">
+                    <img src="images/project1.jpg" alt="Project 1" class="popup-image">
+                    <h3>Project Overview</h3>
+                    <p>Designed and developed a fully responsive e-commerce website for a boutique clothing store. The site includes product listings, user accounts, and a secure checkout system.</p>
+                    <h3>Technologies Used</h3>
+                    <p>HTML5, CSS3, JavaScript, jQuery, PHP, MySQL</p>
+                    <h3>My Role</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </div>
+            
+            <div data-role="popup" id="project2-popup" data-overlay-theme="b" class="project-popup">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="header">
+                    <h2>Portfolio Template</h2>
+                </div>
+                <div role="main" class="ui-content">
+                    <img src="images/project2.jpg" alt="Project 2" class="popup-image">
+                    <h3>Project Overview</h3>
+                    <p>Created a customizable portfolio template for creative professionals, featuring a modern design, easy content management, and responsive layout.</p>
+                    <h3>Technologies Used</h3>
+                    <p>HTML5, CSS3, JavaScript, SASS, Gulp</p>
+                    <h3>My Role</h3>
+                    <p>Designer and Developer</p>
+                </div>
+            </div>
+            
+            <div data-role="popup" id="project3-popup" data-overlay-theme="b" class="project-popup">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="header">
+                    <h2>Mobile App UI</h2>
+                </div>
+                <div role="main" class="ui-content">
+                    <img src="images/project3.jpg" alt="Project 3" class="popup-image">
+                    <h3>Project Overview</h3>
+                    <p>Designed the user interface for a fitness tracking mobile application, focusing on user experience, accessibility, and visual appeal.</p>
+                    <h3>Technologies Used</h3>
+                    <p>Figma, Adobe XD, Illustrator, Photoshop</p>
+                    <h3>My Role</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>&copy; 2025 My Portfolio</h4>
+        </div>
+        
+        <!-- Panel -->
+        <div data-role="panel" id="nav-panel" data-display="overlay" data-theme="b">
+            <ul data-role="listview">
+                <li data-icon="home"><a href="index.html" data-transition="fade">Home</a></li>
+                <li><a href="about.html" data-transition="slide">About Me</a></li>
+                <li><a href="projects.html" data-transition="slide">Projects</a></li>
+                <li><a href="skills.html" data-transition="slide">Skills</a></li>
+                <li><a href="contact.html" data-transition="slide">Contact</a></li>
+            </ul>
+            <a href="#" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

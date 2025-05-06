@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Wireless Mouse",
+    "price": 799,
+    "image": "mouse.jpg"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "price": 2199,
+    "image": "keyboard.jpg"
+  },
+  {
+    "name": "Bluetooth Headphones",
+    "price": 1599,
+    "image": "headphones.jpg"
+  },
+  {
+    "name": "Smartphone Stand",
+    "price": 499,
+    "image": "stand.jpg"
+  },
+  {
+    "name": "USB-C Hub",
+    "price": 1299,
+    "image": "hub.jpg"
+  },
+  {
+    "name": "Webcam",
+    "price": 1899,
+    "image": "webcam.jpg"
+  },
+  {
+    "name": "Portable SSD 500GB",
+    "price": 3499,
+    "image": "ssd.jpg"
+  },
+  {
+    "name": "Laptop Cooling Pad",
+    "price": 899,
+    "image": "coolingpad.jpg"
+  },
+  {
+    "name": "Gaming Chair",
+    "price": 8499,
+    "image": "gamingchair.jpg"
+  },
+  {
+    "name": "Smart LED Desk Lamp",
+    "price": 1399,
+    "image": "lamp.jpg"
+  }
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar p-3 bg-navy-blue text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">facebook</a>
+  
+      <form class="d-flex flex-column gap-1" role="search">
+        <!-- First Row: Email, Password, Login -->
+        <div class="d-flex align-items-center gap-2">
+          <div>
+            <label for="email" class="visually-hidden">Email</label>
+            <input class="form-control" type="search" id="email" placeholder="Email" aria-label="Email">
+          </div>
+          <div>
+            <label for="password" class="visually-hidden">Password</label>
+            <input class="form-control" type="password" id="password" placeholder="Password" aria-label="Password">
+          </div>
+          <button class="btn btn-light" type="submit">Login</button>
+        </div>
+  
+        <!-- Second Row: Keep me logged in & Forgotten password -->
+        <div class="d-flex align-items-center gap-3">
+          <div class="form-check text-white d-flex align-items-center mb-0">
+            <input class="form-check-input" type="checkbox" id="keepLogin">
+            <label class="form-check-label ms-1 small" for="keepLogin">Keep me logged in</label>
+          </div>
+          <a href="#" class="text-white small text-decoration-none">Forgotten my password!</a>
+        </div>
+      </form>
+    </div>
+  </nav>
+  
+
+
+    <!-- Main Section -->
+    <div class="container main-content">
+        <div class="row">
+            <!-- Left Side -->
+            <div class="col-md-6 text-center my-auto">
+                <h3>Facebook is useless without friends.<br>Make More Friends.</h3>
+                <img src="facebook.jpg" alt="Connect Image" class="connect-img my-3">
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-md-6">
+                <div class="card">
+                    <h2>Create an Account</h2>
+                    <p>It's free and always will be.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control mb-2" placeholder="Firstname">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control mb-2" placeholder="Lastname">
+                            </div>
+                        </div>
+                        <input type="email" class="form-control mb-2" placeholder="Email">
+                        <input type="email" class="form-control mb-2" placeholder="Re-enter email">
+                        <input type="password" class="form-control mb-2" placeholder="Password">
+                        <input type="date" class="form-control mb-2">
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+
+                        <p style="font-size: 0.8rem;">By clicking create an account, you agree to our Terms.</p>
+                        <button type="submit" class="btn signup-btn w-100 mb-2">Signup</button>
+                        <a href="#">Create a page for you.</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

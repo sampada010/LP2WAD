@@ -1,0 +1,347 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 300;
+}
+
+/* Home Page Styles */
+.profile-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-container h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 0;
+}
+
+.home-menu {
+    margin-top: 25px;
+}
+
+/* About Page Styles */
+.about-container {
+    padding: 10px;
+}
+
+.about-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    color: #3498db;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+/* Projects Page Styles */
+.project-list li {
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.project-thumbnail {
+    max-width: 80px !important;
+    max-height: 80px !important;
+}
+
+.project-popup {
+    max-width: 500px;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Skills Page Styles */
+.skills-container {
+    padding: 10px;
+}
+
+.skill-category {
+    margin-bottom: 25px;
+}
+
+.skill-category h3 {
+    color: #3498db;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-level {
+    color: #7f8c8d;
+}
+
+/* Custom slider colors */
+.ui-slider-track .ui-btn-active {
+    background-color: #3498db;
+    border-color: #2980b9;
+}
+
+.ui-slider-track {
+    background-color: #ecf0f1;
+}
+
+/* Contact Page Styles */
+.contact-info {
+    margin-bottom: 25px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #3498db;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-buttons a {
+    margin: 5px;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-form h3 {
+    color: #3498db;
+    text-align: center;
+}
+
+/* Footer Styles */
+.ui-footer {
+    text-align: center;
+}
+
+/* Panel Styles */
+#nav-panel {
+    background-color: #2c3e50;
+    border-right: none;
+}
+
+/* Theme customizations */
+.ui-btn-b {
+    background-color: #3498db;
+    border-color: #2980b9;
+    color: #fff;
+    text-shadow: 0 1px 0 #2980b9;
+}
+
+.ui-btn-b:hover,
+.ui-btn-b:focus {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 480px) {
+    .about-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .about-image-container {
+        flex: 0 0 200px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-method {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .ui-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .project-list li {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .skill-category {
+        width: calc(50% - 15px);
+    }
+}
+
+/* Animations */
+.profile-image, .about-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover, .about-image:hover {
+    transform: scale(1.05);
+}
+
+.ui-btn {
+    transition: background-color 0.2s ease;
+}
+
+/* Custom jQuery Mobile overrides */
+.ui-header, .ui-footer {
+    background-color: #2c3e50 !important;
+    color: white !important;
+    border-color: #1a252f !important;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+    margin: 0.5em 30% 0.5em !important;
+}
+
+.ui-btn-active {
+    background-color: #3498db !important;
+    border-color: #2980b9 !important;
+}
+
+/* Loading animation */
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.loading:after {
+    content: '.';
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0);
+    }
+    40% {
+        color: #333;
+        text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0);
+    }
+    60% {
+        text-shadow: .25em 0 0 #333, .5em 0 0 rgba(0,0,0,0);
+    }
+    80%, 100% {
+        text-shadow: .25em 0 0 #333, .5em 0 0 #333;
+    }
+}

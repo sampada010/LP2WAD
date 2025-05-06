@@ -1,0 +1,194 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  /* Nav Bar Styling */
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Page Content */
+  body {
+    padding-top: 60px;  /* Adjust for the fixed navbar */
+  }
+  
+  /* Home Page Styling */
+  .home-content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+    color: #004080;
+  }
+  
+  .home-content p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .add-review-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-review-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Review Page Styling */
+/* Movie Container */
+#movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the cards */
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;  /* Ensures two cards per row */
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling */
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* For Smaller Screens */
+  @media (max-width: 768px) {
+    .movie-card {
+      width: 100%; /* Stack cards vertically on small screens */
+    }
+  }
+  
+  
+  .movie-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .movie-genre {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .movie-summary {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .movie-review {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .movie-rating {
+    font-size: 1.2rem;
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  .rating-value {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .star-rating {
+    font-size: 1.5rem;
+    color: #f39c12;
+  }
+  
+  .star-rating span {
+    margin-right: 5px;
+  }
+  
+  /* About Page Styling */
+  .about-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .review-card {
+      width: 100%;  /* Stack reviews in single column on smaller screens */
+    }
+  }
+  
+  
+  #add-review-form { background: white; margin: 2rem auto; padding: 1.5rem; width: 90%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  #add-review-form input, #add-review-form textarea { width: 100%; padding: 0.7rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 4px; }
+  #add-review-form button { background: #222; color: white; border: none; padding: 0.8rem 1.2rem; margin-top: 1rem; border-radius: 4px; cursor: pointer; }
+  #add-review-form button:hover { background: #555; }  

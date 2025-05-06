@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Movie Reviews</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to Movie Reviews</h1>
+    </header>
+
+    <div class="content">
+        <p>Explore the world of movies. Share your opinions and read what others think!</p>
+    </div>
+
+    <!-- Add Review Form -->
+    <section id="add-review-form">
+        <h2>Add Your Review</h2>
+        <input type="text" id="movie-title" placeholder="Movie Title" required>
+        <input type="text" id="movie-genre" placeholder="Genre" required>
+        <input type="text" id="movie-poster" placeholder="Poster Image URL" required>
+        <textarea id="movie-summary" placeholder="Short Summary" required></textarea>
+        <textarea id="movie-review" placeholder="Your Review" required></textarea>
+        <input type="number" id="movie-rating" placeholder="Rating (0-5)" step="0.1" min="0" max="5" required>
+        <button id="submit-review">Submit Review</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

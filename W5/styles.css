@@ -1,0 +1,75 @@
+/* Custom styles to match the UI in the image */
+
+.filter-section {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+}
+
+.filter-section h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bestseller-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.pricing {
+  margin-top: 10px;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+      margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+      height: 150px;
+  }
+}

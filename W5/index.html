@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugs - E-commerce Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1>Mugs</h1>
+            <div class="d-flex align-items-center">
+                <span class="me-2">Sort by</span>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Popularity
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                        <li><a class="dropdown-item active" href="#">Popularity</a></li>
+                        <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                        <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                        <li><a class="dropdown-item" href="#">Newest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtitle -->
+        <p class="text-muted mb-4">Mugs and glasses sell great as gifts for friends and loved ones on special occasions. Choose from many different sizes and styles to sell online.</p>
+
+        <div class="row">
+            <!-- Filters Column -->
+            <div class="col-lg-3 col-md-4">
+                <!-- Target Market -->
+                <div class="filter-section mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5>Target Market</h5>
+                        <span class="badge bg-success">New</span>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="usa">
+                        <label class="form-check-label" for="usa">USA</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="canada">
+                        <label class="form-check-label" for="canada">Canada</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="uk">
+                        <label class="form-check-label" for="uk">United Kingdom</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="europe">
+                        <label class="form-check-label" for="europe">Europe</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="australia">
+                        <label class="form-check-label" for="australia">Australia/NZ</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="china">
+                        <label class="form-check-label" for="china">China</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="other">
+                        <label class="form-check-label" for="other">Other</label>
+                    </div>
+                </div>
+
+                <!-- Print Area -->
+                <div class="filter-section mb-4">
+                    <h5 class="mb-2">Print area</h5>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="all-areas">
+                        <label class="form-check-label" for="all-areas">All areas</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="all-over">
+                        <label class="form-check-label" for="all-over">All over print</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="front-side">
+                        <label class="form-check-label" for="front-side">Front side</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="wraparound">
+                        <label class="form-check-label" for="wraparound">Wraparound exterior</label>
+                    </div>
+                </div>
+
+                <!-- Print Providers -->
+                <div class="filter-section mb-4">
+                    <h5 class="mb-2">Print providers</h5>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="artsadd">
+                        <label class="form-check-label" for="artsadd">ArtsAdd</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="colorway">
+                        <label class="form-check-label" for="colorway">Colorway</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="district">
+                        <label class="form-check-label" for="district">District Photo</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="duplium">
+                        <label class="form-check-label" for="duplium">Duplium</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Column -->
+            <div class="col-lg-9 col-md-8">
+                <div id="products-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+body {
+    background-color: #f0f2f5;
+}
+.navbar {
+    background-color: #3b5998;
+}
+.navbar-brand {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar .form-control, .navbar .btn {
+    height: 30px;
+    font-size: 0.8rem;
+}
+.main-content {
+    margin-top: 30px;
+}
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.signup-btn {
+    background-color: #42b72a;
+    color: white;
+}
+.connect-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+    

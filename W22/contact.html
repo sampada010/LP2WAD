@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PICT - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header" data-position="fixed">
+            <a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Contact Us</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div data-role="content">
+            <h2>Get in Touch with PICT</h2>
+            
+            <div class="map-container">
+                <img src="images/map.jpg" alt="Location Map" class="map-img">
+                
+            </div>
+            
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    
+                    <h3>Address</h3>
+                    <p>Pune Institute of Computer Technology,<br>
+                    Survey No. 27, Near Trimurti Chowk,<br>
+                    Dhankawadi, Pune - 411043,<br>
+                    Maharashtra, India</p>
+                </li>
+                <li>
+                   
+                    <h3>Phone</h3>
+                    <p>Main Office: +91-20-24371101<br>
+                    Admission Cell: +91-20-24372041<br>
+                    Fax: +91-20-24372040</p>
+                </li>
+                <li>
+                    
+                    <h3>Email</h3>
+                    <p>General Inquiries: principal@pict.edu<br>
+                    Admissions: admissions@pict.edu<br>
+                    Placements: placements@pict.edu</p>
+                </li>
+            </ul>
+            
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Contact Form</h3>
+                <form>
+                    <div data-role="fieldcontain">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="subject">Subject:</label>
+                        <select name="subject" id="subject">
+                            <option value="admission">Admission Inquiry</option>
+                            <option value="academics">Academic Information</option>
+                            <option value="placement">Placement Related</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                    
+                    <button type="submit" data-theme="b">Submit</button>
+                </form>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Working Hours</h3>
+                <table data-role="table" class="ui-responsive">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM - 1:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Important Contacts</h3>
+                <ul data-role="listview">
+                    <li>
+                        <h3>Principal's Office</h3>
+                        <p>Phone: +91-20-24371101<br>Email: principal@pict.edu</p>
+                    </li>
+                    <li>
+                        <h3>Admission Department</h3>
+                        <p>Phone: +91-20-24372041<br>Email: admissions@pict.edu</p>
+                    </li>
+                    <li>
+                        <h3>Placement Cell</h3>
+                        <p>Phone: +91-20-24371101 Ext. 201<br>Email: placements@pict.edu</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-icon="home">Home</a></li>
+                    <li><a href="about.html" data-icon="info">About</a></li>
+                    <li><a href="courses.html" data-icon="grid">Courses</a></li>
+                    <li><a href="#contact" data-icon="mail" class="ui-btn-active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div data-role="panel" id="nav-panel" data-display="overlay" data-theme="b">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

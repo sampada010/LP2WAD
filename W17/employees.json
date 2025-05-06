@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Alice Johnson",
+      "designation": "Software Engineer",
+      "department": "IT",
+      "salary": "₹8,00,000",
+      "image": "images/employee1.jpg"
+    },
+    {
+      "name": "Rahul Sharma",
+      "designation": "Project Manager",
+      "department": "Operations",
+      "salary": "₹12,00,000",
+      "image": "images/employee2.jpg"
+    },
+    {
+      "name": "Priya Verma",
+      "designation": "HR Executive",
+      "department": "Human Resources",
+      "salary": "₹6,00,000",
+      "image": "images/employee3.jpg"
+    }
+  ]
+  

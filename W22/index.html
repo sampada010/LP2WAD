@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PICT - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed">
+            <h1>PICT</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div data-role="content">
+            <div class="center-content">
+                <img src="images/pict_logo.jpg" alt="PICT Logo" class="logo">
+                <h2>Pune Institute of Computer Technology</h2>
+                <p>Empowering Future Technologists</p>
+            </div>
+            
+            <img src="images/campus-view.jpg" alt="Campus View" class="feature-img">
+            
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="about.html" data-role="button" data-transition="slide">About Us</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="courses.html" data-role="button" data-transition="slide">Courses</a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="departments.html" data-role="button" data-transition="slide">Departments</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="contact.html" data-role="button" data-transition="slide">Contact Us</a>
+                </div>
+            </div>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Welcome to PICT</h3>
+                <p>Welcome to the Pune Institute of Computer Technology - one of the premier engineering colleges in Pune, known for excellence in technical education. Established in 1983, PICT has been at the forefront of computer and IT education.</p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Latest News</h3>
+                <ul data-role="listview">
+                    <li>Campus Placement Drive on May 15, 2025</li>
+                    <li>Technical Symposium: TechnoVerse 2025</li>
+                    <li>New AI Research Center Inauguration</li>
+                    <li>Student Project Exhibition: May 10-12, 2025</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+                    <li><a href="about.html" data-icon="info">About</a></li>
+                    <li><a href="courses.html" data-icon="grid">Courses</a></li>
+                    <li><a href="contact.html" data-icon="mail">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="panel" id="nav-panel" data-display="overlay" data-theme="b">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

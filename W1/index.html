@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ProdCatalog</div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <table class="product-table" id="productTable">
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Price (INR ₹)</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Products will be added here dynamically -->
+            </tbody>
+        </table>
+        
+        <div class="pagination" id="pagination">
+            <button id="prevPage" disabled>Previous</button>
+            <span class="page-info" id="pageInfo">Page 1 of 1</span>
+            <button id="nextPage" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
